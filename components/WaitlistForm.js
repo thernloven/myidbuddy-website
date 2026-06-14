@@ -35,7 +35,7 @@ export default function WaitlistForm({ dark }) {
           dark ? "bg-white/20 text-white" : "bg-[#3FBF8F]/12 text-[#2f9e76]"
         }`}
       >
-        <span>🎉</span> You&apos;re on the list! Check your inbox to confirm.
+        You&apos;re on the list! Check your inbox to confirm.
       </div>
     );
   }
@@ -49,7 +49,7 @@ export default function WaitlistForm({ dark }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@airline.com"
-          className={`h-12 flex-1 rounded-full px-5 text-sm outline-none ring-1 transition focus:ring-2 ${
+          className={`h-12 w-full flex-1 rounded-full px-5 text-base outline-none ring-1 transition focus:ring-2 ${
             dark
               ? "bg-white/15 text-white placeholder-white/60 ring-white/25 focus:ring-white"
               : "bg-cloud text-navy placeholder-muted ring-transparent focus:ring-accent"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import WaitlistForm from "../components/WaitlistForm";
+import EarlyAccessButton from "../components/EarlyAccessButton";
 import {
   PhoneFrame,
   MapScreen,
@@ -13,12 +14,22 @@ function Logo({ className = "h-9" }) {
   return (
     <Image
       src="/logo.png"
-      alt="myID buddy"
+      alt="myIDBuddy"
       width={821}
       height={255}
       priority
       className={`${className} w-auto`}
     />
+  );
+}
+
+// Text wordmark — "myID" bold, "Buddy" light.
+function Wordmark({ className = "text-lg" }) {
+  return (
+    <span className={`tracking-tight text-navy ${className}`}>
+      <span className="font-extrabold">myID</span>
+      <span className="font-light">Buddy</span>
+    </span>
   );
 }
 
@@ -32,12 +43,7 @@ function Nav() {
           <a href="#features" className="transition hover:text-navy">Features</a>
           <a href="#safety" className="transition hover:text-navy">Safety</a>
         </div>
-        <a
-          href="#waitlist"
-          className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-card transition hover:bg-accent-deep"
-        >
-          Get early access
-        </a>
+        <EarlyAccessButton />
       </nav>
     </header>
   );
@@ -61,7 +67,7 @@ function Hero() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:py-24">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full bg-accent/12 px-3 py-1 text-xs font-semibold text-accent">
-            ✈️ For ID & standby travelers
+            For ID & standby travelers
           </span>
           <h1 className="mt-5 text-4xl font-extrabold leading-[1.05] tracking-tight text-navy sm:text-5xl md:text-6xl">
             Find your{" "}
@@ -284,13 +290,13 @@ function Footer() {
   return (
     <footer className="border-t border-cloud">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row">
-        <Logo />
+        <Logo className="h-9" />
         <div className="flex gap-6 text-sm text-muted">
           <a href="#" className="transition hover:text-navy">Privacy</a>
           <a href="#" className="transition hover:text-navy">Terms</a>
           <a href="#" className="transition hover:text-navy">Contact</a>
         </div>
-        <p className="text-sm text-muted">© {new Date().getFullYear()} myidbuddy</p>
+        <p className="text-sm text-muted">© {new Date().getFullYear()} myIDBuddy</p>
       </div>
     </footer>
   );
