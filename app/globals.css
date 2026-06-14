@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a2332;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft grid / dotted backdrop used behind the hero */
+.dotted {
+  background-image: radial-gradient(rgba(26, 35, 50, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
