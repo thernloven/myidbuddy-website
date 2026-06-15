@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const FROM = process.env.WAITLIST_FROM || "myID buddy <hello@myidbuddy.com>";
+const FROM = process.env.WAITLIST_FROM || "myIDBuddy <hello@myidbuddy.com>";
 const NOTIFY = process.env.WAITLIST_NOTIFY || "hello@myidbuddy.com";
 
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
@@ -12,7 +12,7 @@ function welcomeHtml() {
     <div style="max-width:480px;margin:0 auto;text-align:center">
       <h1 style="font-size:24px;margin:0 0 8px">You're on the list ✈️</h1>
       <p style="color:#8E929A;font-size:15px;line-height:1.5;margin:0 0 24px">
-        Thanks for joining the <strong style="color:#F46C8B">myID buddy</strong> waitlist.
+        Thanks for joining the <strong style="color:#F46C8B">myIDBuddy</strong> waitlist.
         We'll let you know the moment you can find your ID buddies.
       </p>
       <div style="display:inline-block;background:#F46C8B;color:#fff;font-weight:600;
@@ -48,7 +48,7 @@ export async function POST(req) {
     const { error } = await resend.emails.send({
       from: FROM,
       to: email,
-      subject: "You're on the myID buddy waitlist ✈️",
+      subject: "You're on the myIDBuddy waitlist ✈️",
       html: welcomeHtml(),
     });
     if (error) {
@@ -62,7 +62,7 @@ export async function POST(req) {
         from: FROM,
         to: NOTIFY,
         subject: `New waitlist signup: ${email}`,
-        text: `${email} just joined the myID buddy waitlist.`,
+        text: `${email} just joined the myIDBuddy waitlist.`,
       })
       .catch((e) => console.error("Resend (notify) error:", e));
 
