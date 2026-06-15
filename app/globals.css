@@ -21,3 +21,65 @@ body {
   background-image: radial-gradient(rgba(26, 35, 50, 0.06) 1px, transparent 1px);
   background-size: 22px 22px;
 }
+
+/* Long-form legal pages (privacy / terms) */
+.legal {
+  color: rgba(26, 35, 50, 0.78);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.legal h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #1a2332;
+  scroll-margin-top: 6rem;
+}
+.legal h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2332;
+}
+.legal p {
+  margin-bottom: 1rem;
+}
+.legal ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.legal li {
+  margin-bottom: 0.4rem;
+}
+.legal strong {
+  font-weight: 700;
+  color: #1a2332;
+}
+.legal a {
+  color: #e0517a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  font-size: 14px;
+}
+.legal th,
+.legal td {
+  border: 1px solid #eef0f2;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.legal th {
+  background: #f7f8fa;
+  font-weight: 700;
+  color: #1a2332;
+}

@@ -13,7 +13,7 @@ function welcomeHtml() {
       <h1 style="font-size:24px;margin:0 0 8px">You're on the list ✈️</h1>
       <p style="color:#8E929A;font-size:15px;line-height:1.5;margin:0 0 24px">
         Thanks for joining the <strong style="color:#F46C8B">myID buddy</strong> waitlist.
-        We'll let you know the moment you can find your standby crew.
+        We'll let you know the moment you can find your ID buddies.
       </p>
       <div style="display:inline-block;background:#F46C8B;color:#fff;font-weight:600;
                   padding:12px 22px;border-radius:999px;font-size:14px">

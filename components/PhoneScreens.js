@@ -28,7 +28,7 @@ export function MapScreen() {
   return <Shot src="/screens/map.png" alt="myID buddy map of travelers" />;
 }
 export function TripScreen() {
-  return <Shot src="/screens/trip.png" alt="Trip detail with standby crew" />;
+  return <Shot src="/screens/trip.png" alt="Trip detail with standby travelers" />;
 }
 export function FlightsScreen() {
   return <Shot src="/screens/flights.png" alt="Staff travel flight loads" />;

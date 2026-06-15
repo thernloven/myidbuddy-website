@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata = {
-  title: "myIDBuddy — Find your standby crew",
+  title: "myIDBuddy — Find your ID buddies",
   description:
     "The app for ID & standby travelers. See who's flying where, join trips, check staff-travel loads, and connect with verified travel buddies.",
   verification: {
