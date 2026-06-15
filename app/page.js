@@ -115,9 +115,9 @@ function Hero() {
 
 function Stats() {
   const items = [
-    ["3,000+", "travelers waiting"],
-    ["80+", "cities on the map"],
-    ["30+", "airlines & ID agreements"],
+    ["1M+", "ID travelers worldwide"],
+    ["190+", "countries on the map"],
+    ["300+", "airlines & ID agreements"],
     ["100%", "verified profiles"],
   ];
   return (
