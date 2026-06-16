@@ -8,7 +8,9 @@ export default function SiteFooter() {
         <Link href="/" aria-label="myIDBuddy home">
           <Image src="/logo.png" alt="myIDBuddy" width={821} height={255} className="h-9 w-auto" />
         </Link>
-        <div className="flex gap-6 text-sm text-muted">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted">
+          <Link href="/knowledge" className="transition hover:text-navy">Knowledge</Link>
+          <Link href="/faq" className="transition hover:text-navy">FAQ</Link>
           <Link href="/privacy" className="transition hover:text-navy">Privacy</Link>
           <Link href="/terms" className="transition hover:text-navy">Terms</Link>
           <a href="mailto:hello@myidbuddy.com" className="transition hover:text-navy">Contact</a>

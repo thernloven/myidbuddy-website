@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistForm from "../components/WaitlistForm";
 import EarlyAccessButton from "../components/EarlyAccessButton";
 import SiteFooter from "../components/SiteFooter";
@@ -43,6 +44,7 @@ function Nav() {
           <a href="#how" className="transition hover:text-navy">How it works</a>
           <a href="#features" className="transition hover:text-navy">Features</a>
           <a href="#safety" className="transition hover:text-navy">Safety</a>
+          <Link href="/knowledge" className="transition hover:text-navy">Knowledge</Link>
         </div>
         <EarlyAccessButton />
       </nav>
